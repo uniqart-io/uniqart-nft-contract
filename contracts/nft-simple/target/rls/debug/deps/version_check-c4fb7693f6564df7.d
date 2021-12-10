@@ -1,0 +1,10 @@
+e:\Test\nft-market\contracts\nft-simple\target\rls\debug\deps\version_check-c4fb7693f6564df7.rmeta: C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs
+
+e:\Test\nft-market\contracts\nft-simple\target\rls\debug\deps\libversion_check-c4fb7693f6564df7.rlib: C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs
+
+e:\Test\nft-market\contracts\nft-simple\target\rls\debug\deps\version_check-c4fb7693f6564df7.d: C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs
+
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs:

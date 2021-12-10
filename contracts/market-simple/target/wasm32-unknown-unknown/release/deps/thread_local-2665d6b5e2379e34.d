@@ -1,0 +1,10 @@
+E:\Test\nft-market\contracts\market-simple\target\wasm32-unknown-unknown\release\deps\thread_local-2665d6b5e2379e34.rmeta: C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\lib.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\cached.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\thread_id.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\unreachable.rs
+
+E:\Test\nft-market\contracts\market-simple\target\wasm32-unknown-unknown\release\deps\libthread_local-2665d6b5e2379e34.rlib: C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\lib.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\cached.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\thread_id.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\unreachable.rs
+
+E:\Test\nft-market\contracts\market-simple\target\wasm32-unknown-unknown\release\deps\thread_local-2665d6b5e2379e34.d: C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\lib.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\cached.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\thread_id.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\unreachable.rs
+
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\lib.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\cached.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\thread_id.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.3\src\unreachable.rs:

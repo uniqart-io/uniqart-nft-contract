@@ -1,0 +1,10 @@
+E:\Test\nft-market\contracts\market-simple\target\release\deps\version_check-8f6a59a0464286f6.rmeta: C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs
+
+E:\Test\nft-market\contracts\market-simple\target\release\deps\libversion_check-8f6a59a0464286f6.rlib: C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs
+
+E:\Test\nft-market\contracts\market-simple\target\release\deps\version_check-8f6a59a0464286f6.d: C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs
+
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\lib.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\version.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\channel.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\version_check-0.9.2\src\date.rs:

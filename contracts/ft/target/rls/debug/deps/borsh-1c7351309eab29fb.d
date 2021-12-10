@@ -1,0 +1,10 @@
+e:\Test\nft-market\contracts\ft\target\rls\debug\deps\borsh-1c7351309eab29fb.rmeta: C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src/lib.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\de\mod.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\de\hint.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\schema.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\schema_helpers.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\ser\mod.rs
+
+e:\Test\nft-market\contracts\ft\target\rls\debug\deps\borsh-1c7351309eab29fb.d: C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src/lib.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\de\mod.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\de\hint.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\schema.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\schema_helpers.rs C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\ser\mod.rs
+
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src/lib.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\de\mod.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\de\hint.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\schema.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\schema_helpers.rs:
+C:\Users\Aarya\ Vishwakarma\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.1\src\ser\mod.rs:
