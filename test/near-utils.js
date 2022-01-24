@@ -1,8 +1,8 @@
 const fs = require("fs");
 const nearAPI = require("near-api-js");
-const getConfig = require("../src/config");
-require('dotenv').config();
-const { nodeUrl, networkId, contractName, contractMethods } = getConfig();
+const getConfig = require("./config");
+const { nodeUrl, networkId, contractName, contractMethods } = getConfig('testnet');
+
 const {
 	keyStores: { InMemoryKeyStore },
 	Near,
@@ -14,28 +14,22 @@ const {
 	},
 } = nearAPI;
 
-const credPath = `./neardev/${networkId}/${contractName}.json`;
-console.log(
-	"Loading Credentials:\n",
-	credPath
-);
-
 let credentials;
 try {
-	credentials = JSON.parse(
-		fs.readFileSync(
-			credPath
-		)
-	);
-} catch(e) {
-	console.warn(e);
-	/// attempt to load backup creds from local machine
 	credentials = JSON.parse(
 		fs.readFileSync(
 			`${process.env.HOME}/.near-credentials/${networkId}/${contractName}.json`
 		)
 	);
+} catch(e) {
+	console.warn('credentials not found, looking in /neardev');
+	credentials = JSON.parse(
+		fs.readFileSync(
+			`./neardev/${networkId}/${contractName}.json`
+		)
+	);
 }
+
 const keyStore = new InMemoryKeyStore();
 keyStore.setKey(
 	networkId,
@@ -53,13 +47,14 @@ contractAccount.addAccessKey = (publicKey) =>
 	contractAccount.addKey(
 		publicKey,
 		contractName,
-		contractMethods.changeMethods,
+		contractMethods,
 		parseNearAmount("0.1")
 	);
 const contract = new Contract(contractAccount, contractName, contractMethods);
 
 module.exports = {
 	near,
+	credentials,
 	keyStore,
 	connection,
 	contract,

@@ -1,15 +1,16 @@
+const fs = require("fs");
 const BN = require('bn.js');
 const fetch = require('node-fetch');
 const nearAPI = require('near-api-js');
 const { KeyPair, Account, Contract, utils: { format: { parseNearAmount } } } = nearAPI;
-const { near, connection, keyStore, contract, contractAccount } = require('./near-utils');
-const getConfig = require('../src/config');
-require('dotenv').config();
+const { near, credentials, connection, keyStore, contract, contractAccount } = require('./near-utils');
+const getConfig = require('./config');
 const {
-	networkId, contractName, contractMethods,
+	networkId, contractName, contractMethods, gas,
 	DEFAULT_NEW_ACCOUNT_AMOUNT, 
 	DEFAULT_NEW_CONTRACT_AMOUNT,
-} = getConfig();
+	GUESTS_ACCOUNT_SECRET,
+} = getConfig('testnet');
 
 const TEST_HOST = 'http://localhost:3000';
 /// exports
@@ -18,10 +19,10 @@ async function initContract() {
 	try {
 		const newArgs = {
 			owner_id: contractAccount.accountId,
-			metadata: {
-				spec: 'nft-1',
-				name: 'Test NFT',
-				symbol: 'TNFT',
+			"metadata": {
+				"spec": "nft-1",
+				"name": "UHHM NFT - Hip Hop Heads",
+				"symbol": "HHH"
 			},
 			supply_cap_by_type: {
 				test: '1000000',
@@ -43,25 +44,21 @@ const initAccount = async(accountId, secret) => {
 	keyStore.setKey(networkId, accountId, newKeyPair);
 	return account;
 };
-const createOrInitAccount = async(accountId, secret) => {
+
+const createOrInitAccount = async(accountId, secret = GUESTS_ACCOUNT_SECRET, amount = DEFAULT_NEW_CONTRACT_AMOUNT) => {
 	let account;
 	try {
-		account = await createAccount(accountId, DEFAULT_NEW_CONTRACT_AMOUNT, secret);
+		account = await createAccount(accountId, amount, secret);
 	} catch (e) {
 		if (!/because it already exists/.test(e.toString())) {
 			throw e;
 		}
-		account = new nearAPI.Account(connection, accountId);
-
-		console.log(await getAccountBalance(accountId));
-
-		const newKeyPair = KeyPair.fromString(secret);
-		keyStore.setKey(networkId, accountId, newKeyPair);
+		account = initAccount(accountId, secret);
 	}
 	return account;
 };
 
-async function getAccount(accountId, fundingAmount = DEFAULT_NEW_ACCOUNT_AMOUNT) {
+async function getAccount(accountId, fundingAmount = DEFAULT_NEW_ACCOUNT_AMOUNT, secret) {
 	accountId = accountId || generateUniqueSubAccount();
 	const account = new nearAPI.Account(connection, accountId);
 	try {
@@ -72,7 +69,7 @@ async function getAccount(accountId, fundingAmount = DEFAULT_NEW_ACCOUNT_AMOUNT)
 			throw e;
 		}
 	}
-	return await createAccount(accountId, fundingAmount);
+	return await createAccount(accountId, fundingAmount, secret);
 };
 
 
@@ -157,7 +154,9 @@ const loadCredentials = (accountId) => {
 		console.warn('credentials not in /neardev');
 		/// attempt to load backup creds from local machine
 		credentials = JSON.parse(
-			fs.readFileSync(`${process.env.HOME}/.near-credentials/${networkId}/${accountId}.json`)
+			fs.readFileSync(
+				`${process.env.HOME}/.near-credentials/${networkId}/${accountId}.json`
+			)
 		);
 	}
 
@@ -167,33 +166,21 @@ const loadCredentials = (accountId) => {
 module.exports = { 
 	TEST_HOST,
 	near,
+	gas,
 	connection,
+	credentials,
 	keyStore,
 	getContract,
 	getAccountBalance,
 	contract,
 	contractName,
+	contractId: contractName,
 	contractMethods,
 	contractAccount,
+	initAccount,
 	createOrInitAccount,
 	createAccessKeyAccount,
 	initContract, getAccount, postSignedJson, postJson,
+	loadCredentials,
 };
 
-
-/// functionCallV2 console.warn upgrade helper
-
-// [contractAccount, alice, bob].forEach((account) => {
-// 	const temp = account.functionCall;
-// 	const keys = ['contractId', 'methodName', 'args', 'gas', 'attachedDeposit'];
-// 	account.functionCall = async (...args) => {
-// 		if (typeof args[0] === 'string') {
-// 			const functionCallOptions = {};
-// 			args.forEach((arg, i) => {
-// 				functionCallOptions[keys[i]] = arg;
-// 			});
-// 			console.warn(functionCallOptions);
-// 		}
-// 		return await temp.call(account, ...args);
-// 	};
-// });

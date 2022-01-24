@@ -1,6 +1,6 @@
 const fs = require('fs');
 const contractName = fs.readFileSync('./neardev/dev-account').toString()
-const path = './src/config.js'
+const path = './test/config.js'
  
 fs.readFile(path, 'utf-8', function(err, data) {
     if (err) throw err;
